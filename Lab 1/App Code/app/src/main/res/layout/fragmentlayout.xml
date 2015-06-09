@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/hint_foreground_material_light"
+     >
+
+    <ImageView
+        android:src="@drawable/micky"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+
+
+        />
+
+
+
+
+
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sahithi Desu "
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/hint_foreground_material_light"
+        android:fontFamily="@string/abc_action_mode_done"
+        android:typeface="monospace"
+        android:textStyle="italic"
+        android:textSize="50sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:text="Hello World"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+      ></TextView>
+
+
+    <Button
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Click Me!!"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@color/dim_foreground_disabled_material_light"
+        android:textColor="@color/abc_input_method_navigation_guard" />
+
+
+</LinearLayout>
+</RelativeLayout>
+
+
+
+
+try{
+            String url ="http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SY317_CR0,0,214,317_AL_.jpg";
+            ImageButton img=(ImageButton)view.findViewById(imgbutton.getId());
+            Bitmap bitmap = BitmapFactory.decodeStream((InputStream)new URL(url).getContent());
+            imgbutton.setImageBitmap(bitmap);
+        }catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }

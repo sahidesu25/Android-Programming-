@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/myself" android:title="MySelfFragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/linear" android:title="LinearLayoutFragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/relative" android:title="RelativeLayoutFragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/movielayout" android:title="Movies Info"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/seekbarlayout" android:title="SeekBar Fragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

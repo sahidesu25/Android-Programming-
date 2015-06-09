@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/myself" android:title="MySelfFragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/listviewitem" android:title="ListView Fragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/gridviewitem" android:title="GridView Fragment"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+</menu>
