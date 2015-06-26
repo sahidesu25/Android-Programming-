@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:layout_centerVertical="true"
+
+    android:background="@color/abc_input_method_navigation_guard">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/baground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="153dp"
+                    android:layout_height="227dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/avatar"
+                    android:id="@+id/image1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:id="@+id/table1">
+                    <TableRow>
+
+                        <TextView
+                            android:text="Avatar "
+                            android:textStyle="bold"
+                            android:id="@+id/name"
+                            android:textSize="20dp"
+
+                            />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:text="(Year)"
+
+                            android:id="@+id/yearans"
+
+                            />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="duration"
+
+                            android:id="@+id/duration"
+                            android:layout_marginTop="20dp"
+
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <TableRow>
+                        <TextView
+                            android:text="Director :"
+                            android:textStyle="bold"
+                            android:id="@+id/director"
+                            />
+                        <TextView
+                            android:text="Directorans"
+                            android:id="@+id/directorans"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Cast :"
+                            android:textStyle="bold"
+                            android:id="@+id/cast"
+                            android:layout_marginTop="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="170dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Cast"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/castans"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:layout_below="@+id/name"
+                android:rating="2.5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/rating"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Description: "
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="fill_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa "
+
+                    android:id="@+id/desans"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BacktoMoviesList"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/movielistbutton"/>
+    </LinearLayout>
+</HorizontalScrollView>
