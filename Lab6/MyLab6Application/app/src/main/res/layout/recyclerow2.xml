@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/cardview"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    >
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/dim_foreground_disabled_material_light"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lion"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:textColor="@color/abc_secondary_text_material_dark"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rating"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/overflow2"
+                android:focusable="false"
+
+                android:id="@+id/overflow"
+
+
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:layout_below="@+id/name"
+                android:rating="2.5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/rating"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10dp"
+                android:id="@+id/des"
+                android:layout_below="@+id/rating"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dim_foreground_disabled_material_light">
+            <ImageView
+                android:layout_width="75dp"
+                android:id="@+id/image"
+                android:layout_height="95dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/lion"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

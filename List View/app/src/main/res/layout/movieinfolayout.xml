@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:layout_centerVertical="true"
+
+    android:background="@color/abc_input_method_navigation_guard">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@drawable/baground"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_gravity="left"
+      android:src="@drawable/avatar"
+        android:id="@+id/image1"
+        android:layout_weight="0.53" />
+     <TableLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="50dp"
+         android:layout_gravity="center_horizontal"
+         android:id="@+id/table1">
+         <TableRow>
+             <TextView
+                 android:text="Movie Name: "
+                 android:textStyle="bold"
+                 android:id="@+id/name"
+
+                 />
+             <TextView
+                 android:text="Movie Name: "
+                 android:textStyle="bold"
+                 android:id="@+id/nameans"
+
+                 />
+             </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="Description: "
+                 android:textStyle="bold"
+                 android:id="@+id/des"
+
+                 />
+             <TextView
+                 android:text="Description: "
+                 android:textStyle="bold"
+                 android:id="@+id/desans"
+
+                 />
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="Stars: "
+                 android:textStyle="bold"
+                 android:id="@+id/star"
+
+                 />
+             <TextView
+                 android:text="Stars: "
+                 android:textStyle="bold"
+                 android:id="@+id/starans"
+
+                 />
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="Year: "
+                 android:textStyle="bold"
+                 android:id="@+id/year"
+
+
+                 />
+             <TextView
+                 android:text="Year"
+                 android:textStyle="bold"
+                 android:id="@+id/yearans"
+
+                 />
+         </TableRow>
+
+         <TableRow>
+             <TextView
+                 android:text="Rating: "
+                 android:textStyle="bold"
+                 android:id="@+id/rating"
+                 android:textSize="40dp"
+                 android:textColor="@color/abc_primary_text_material_light"
+
+                 />
+             <RatingBar
+                 android:id="@+id/ratingans"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:numStars="10"
+                 android:stepSize="0.3"
+                 android:rating="0.0" />
+         </TableRow>
+
+
+     </TableLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp">
+    <Button
+        android:layout_width="98dp"
+        android:layout_height="match_parent"
+        android:text="LoadPrev"
+        android:id="@+id/prev"
+
+        android:layout_gravity="left" />
+
+    <Button
+        android:layout_width="98dp"
+        android:layout_height="match_parent"
+        android:text="Loadnext"
+        android:layout_gravity="left"
+        android:id="@+id/next"
+        />
+    <Button
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullmovielist"
+        android:text="Entire Movie List"
+
+       />
+    </LinearLayout>
+</LinearLayout>
+    </HorizontalScrollView>

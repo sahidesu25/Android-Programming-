@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerView">
+        <attr name="title_" format="string"/>
+<attr name="subtitle_" format="string"/>
+<attr name="image" format="integer"/>
+        <attr name="color_" format="color"/>
+    </declare-styleable>
+    </resources>

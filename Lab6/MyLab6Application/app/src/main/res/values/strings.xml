@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DesuMyLab6Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_master_detail_flow">MasterDetailFlow</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+    <string name="title_activity_detail_movie_pager">DetailMoviePagerActivity</string>
+    <string name="title_activity_detail_movie_fragment">DetailMovieFragmentActivity</string>
+    <string name="title_activity_recycler">RecyclerActivity</string>
+</resources>

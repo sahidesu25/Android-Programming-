@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/mybackground"
+    tools:context="com.example.teachcustomview.app.MainActivity$PlaceholderFragment">
+
+
+    <com.example.layout.myapplication.ExerciseThermometerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/thermometer"
+        app:title="Syracuse University"
+        app:image="@drawable/soccerball"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:max = "360"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thermometer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Use as Compass"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/seekBar"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/toggleButton"
+        android:layout_marginTop="20dp"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_toRightOf="@id/textView2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Desu_MyLab7Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_date_picker">DatePickerActivity</string>
+</resources>
